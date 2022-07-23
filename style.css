@@ -1,21 +1,113 @@
-.cabecera-fondo {
+:root {
+    --color-header: #ebf7f8;
+    --color-bordes-section: #d0e0eb;
+    --color-titulos: #010d23;
+    --color-texto: #03223f;
+    --color-skills: #177f0e;
+    --color-fondo: #ffffff;
+    --texto: 'Lato', sans-serif;
+    --titulos: 'Rubik', sans-serif;
+
+}
+
+* {box-sizing:border-box}
+
+body {
+    color: var(--color-texto);
+}
+
+.cabecera {
     width: 100%;
     height: 300px;
+    background-color: black;
     background-image: url("img/fondo.jpg");
+    background-size: cover;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
-h1 {
-    color: aliceblue;
-    font-size: 30px;
-    margin: 10px 10px 20px 30px;
+.cabecera-titulo {
+    color: var(--color-header);
+    font-family: var(--titulos);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-p {
-    color: aliceblue;
-    font-size: 10px;
-    margin: 10px 10px 20px 30px;
+.cabecera-titulo p {
+    font-size: 1.2rem;
 }
 
 .cabecera-foto img {
-    width: 20%;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.contacto {
+    display: flex;
+}
+
+.contacto img {
+    margin-left: 2rem;
+}
+
+main {
+    font-family: var(--texto);
+    background-color: var(--color-fondo);
+}
+
+
+.container {
+    padding: 1rem 2rem;
+    border: 1px solid var(--color-bordes-section);
+    margin: 1rem;
+    border-radius: 5px;
+}
+.seccion-titulo {
+    font-family: var(--titulos);
+    color: var(--color-titulos);
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.experiencia li, .educacion li {
+    margin-bottom: 2rem;
+}
+
+.institucion {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.fecha {
+    font-style: italic;
+}
+.skills-container {
+    width: 80%;
+    background-color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white; 
+}
+
+.html {width: 90%; background-color: var(--color-skills);} 
+.css {width: 80%; background-color: var(--color-skills);} 
+.javascript {width: 65%; background-color: var(--color-skills);} 
+.angular {width: 60%; background-color: var(--color-skills);}
+.java {width: 60%; background-color: var(--color-skills);}
+
+.proyectos {
+    color: #000000;
+}
+footer {
+    font-family: var(--texto);
+    background-color: var(--color-titulos);
+    color: var(--color-header);
+    text-align: center;
+    padding: 1rem 0;
 }
